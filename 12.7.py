@@ -6,7 +6,7 @@ def get_age():
     age = int(input())
     # Age required to be between 18 and 75 otherwise bring an error
     if age < 18 or age > 75:
-        raise ValueError("Invalid age")
+        raise ValueError("Invalid age.")
     return age
 # Should be fine. WIP
 
@@ -20,10 +20,9 @@ if __name__ == "__main__":
     try:
         age = get_age()
         rate = fat_burning_heart_rate(age)
-        print("Fat burning rate for a ", age, " year-old:")
-        print(rate, "bpm")
+        print("Fat burning heart rate for a",age,"year-old:",fat_burning_heart_rate(age),"bpm")
     except ValueError as ex:
         print(ex)
-        print("Could not calculate heart rate")
+        print("Could not calculate heart rate info.\n")
 
     age = get_age()
