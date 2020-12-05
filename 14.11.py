@@ -11,7 +11,7 @@ def selection_sort_descend_trace(nmbrlst):
             if nmbrlst[j] > nmbrlst[index]:
                 index = j
         nmbrlst[i], nmbrlst[index] = nmbrlst[index], nmbrlst[i]
-        print(' '.join([str(x) for x in nmbrlst]))
+        print(' '.join([str(x) for x in nmbrlst]), "")
 
     return nmbrlst
 
